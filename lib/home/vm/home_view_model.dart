@@ -3,7 +3,6 @@ import 'dart:math';
 import 'package:either_dart/either.dart';
 import 'package:flutter/foundation.dart';
 import 'package:ins_hw/home/model/home_model.dart';
-import 'package:provider/provider.dart';
 
 class HomeViewModel extends ChangeNotifier {
   int widthForImg = 350;

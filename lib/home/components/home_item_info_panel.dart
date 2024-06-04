@@ -44,8 +44,8 @@ class _HomeItemInfoActionBar extends StatelessWidget {
                       color: Colors.red,
                     ),
                     onTap: () {
-                      HomeViewModel? vm = Provider.of<HomeViewModel>(context);
-                      vm.like();
+                      HomeViewModel? vm = Provider.of<HomeViewModel?>(context);
+                      vm?.like();
                     },
                   ),
                   Container(
@@ -92,7 +92,7 @@ class _HomeItemInfoTextContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    HomeItemViewModel vm = Provider.of<HomeItemViewModel>(context);
+    HomeItemViewModel? vm = Provider.of<HomeItemViewModel?>(context);
     String? likeStr = vm?.like;
     String? contentStr = vm?.content;
 
